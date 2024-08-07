@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Unidades</title>
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <div class="titulo">
+                <h1>Conversor de medidas</h1>
+            </div>
+        </div>
+    </header>
+    <div class="bloco__conta">
+        <div class="medidas">
+            <select id="Medida1" class="seletor">
+                <option selected disabled value="">Temperatura</option>
+            </select>
+        </div>
+        <br>
+        <input type="number" class="valor" value="0" id="valor1">
+        <div class="seletores__inferiores">
+            <select id="deUnidade1" class="seletor">
+                <option selected disabled value="">Selecione uma unidade</option>
+                <option>Celsius(°C)</option>
+                <option>Fahrenheit(°F)</option>
+            </select>
+            <select id="praUnidade1" class="seletor">
+                <option selected disabled value="">Selecione uma unidade</option>
+                <option>Celsius(°C)</option>
+                <option>Fahrenheit(°F)</option>
+            </select>
+            <div class="resultado" aria-label="resultado" tabindex="0" id="resultadoCalculo1">
+                Por favor, digite um valor
+            </div>
+            <button onclick="converterTemperatura()" class="botao">Calcular</button>
+        </div>
+    </div>
+    <div class="bloco__conta">
+        <div class="medidas">
+            <select id="Medida2" class="seletor__comprimento seletor">
+                <option selected disabled value="">Comprimento</option>
+            </select>
+        </div>
+        <br>
+        <input type="number" class="valor" value="0" id="valor2">
+        <div class="seletores__inferiores">
+            <select id="deUnidade2" class="seletor">
+                <option selected disabled value="">Selecione uma unidade</option>
+                <option>Metros(m)</option>
+                <option>Pés(ft)</option>
+            </select>
+            <select id="praUnidade2" class="seletor">
+                <option selected disabled value="">Selecione uma unidade</option>
+                <option>Metros(m)</option>
+                <option>Pés(ft)</option>
+            </select>
+            <div class="resultado" aria-label="resultado" tabindex="0" id="resultadoCalculo2">
+                Por favor, digite um valor
+            </div>
+            <button onclick="converterComprimento()" class="botao">Calcular</button>
+        </div>
+    </div>
+    <div class="bloco__conta">
+        <div class="medidas">
+            <select id="Medida3" class="seletor__Peso seletor">
+                <option selected disabled value="">Peso</option>
+            </select>
+        </div>
+        <br>
+        <input type="number" class="valor" value="0" id="valor3">
+        <div class="seletores__inferiores">
+            <select id="deUnidade3" class="seletor3">
+                <option selected disabled value="">Selecione uma unidade</option>
+                <option>Quilogramas(kg)</option>
+                <option>Libras(lb)</option>
+            </select>
+            <select id="praUnidade3" class="seletor">
+                <option selected disabled value="">Selecione uma unidade</option>
+                <option>Quilogramas(kg)</option>
+                <option>Libras(lb)</option>
+            </select>
+            <div class="resultado" aria-label="resultado" tabindex="0" id="resultadoCalculo3">
+                Por favor, digite um valor
+            </div>
+            <button onclick="converterPeso()" class="botao">Calcular</button>
+        </div>
+    </div>
+    <script src="javaScript.js"></script>
+</body>
+</html>
